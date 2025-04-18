@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Resume</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: sans-serif;
+    }
+    .download-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px 20px;
+      z-index: 10;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-title img {
+      height: 30px;
+      width: 30px;
+      border-radius: 5px;
+    }
+    .logo-title h1 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .download-bar a {
+      color: white;
+      background: #007bff;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    iframe {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 100%;
+      height: calc(100% - 50px);
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="download-bar">
+    <div class="logo-title">
+      <img src="logo.png" alt="Logo">
+      <h1>My Resume</h1>
+    </div>
+    <a href="resume.pdf" download>Download PDF</a>
+  </div>
+  <iframe src="resume.pdf"></iframe>
+</body>
+</html>
